@@ -2,6 +2,7 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Zap, Shield, Clock, Smartphone, TrendingUp, Users } from "lucide-react"
+import { SafeIcon } from "@/components/safe-icon"
 
 const features = [
   {
@@ -41,15 +42,6 @@ const features = [
     color: "text-pink-400",
   },
 ]
-
-interface SafeIconProps {
-  icon: any
-  className?: string
-}
-
-const SafeIcon = ({ icon: Icon, className }: SafeIconProps) => {
-  return <Icon className={className} />
-}
 
 export function FeaturesSection() {
   return (

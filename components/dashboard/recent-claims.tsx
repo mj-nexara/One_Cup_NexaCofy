@@ -3,16 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Bitcoin, Coins, DollarSign, Zap, CheckCircle, Clock } from "lucide-react"
-import type { LucideIcon } from "lucide-react"
-
-interface SafeIconProps {
-  icon: LucideIcon
-  className?: string
-}
-
-const SafeIcon = ({ icon: Icon, className }: SafeIconProps) => {
-  return <Icon className={className} />
-}
+import { SafeIcon } from "@/components/safe-icon"
 
 const recentClaims = [
   {

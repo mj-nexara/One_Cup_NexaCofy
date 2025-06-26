@@ -8,13 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Copy, Eye, EyeOff, Plus, Wallet } from "lucide-react"
 import { useState } from "react"
 
-function SafeIcon({ icon: Icon, className }: { icon: any; className?: string }) {
-  if (typeof Icon === "string") {
-    return null
-  }
-
-  return <Icon className={className} />
-}
+import { SafeIcon } from "@/components/safe-icon"
 
 export function WalletManagement() {
   const [showPrivateKey, setShowPrivateKey] = useState(false)
