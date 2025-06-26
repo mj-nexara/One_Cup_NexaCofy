@@ -9,7 +9,7 @@ class NexaCofyAutoClaimScheduler {
     this.isRunning = false
     this.config = {
       interval: "0 * * * *", // Every hour
-      baseUrl: process.env.BASE_URL || "https://onecupnexacofy.vercel.app",
+      baseUrl: process.env.BASE_URL || "http://localhost:3000",
       maxRetries: 3,
       retryDelay: 5000,
     }
